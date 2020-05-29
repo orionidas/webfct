@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    height: 100%;
+}
+
+/* header */
+.esq1{grid-area: esq1;}
+.esq2{grid-area: esq2;}
+.logo{grid-area: logo;}
+.menu{grid-area: menu;}
+/* main */
+.bor1{grid-area: bor1;}
+.bor2{grid-area: bor2;}
+.cont{grid-area: cont;}
+.bors{grid-area: bors;}
+/* footer */
+.bori1{grid-area: bori1;}
+.bori2{grid-area: bori2;}
+.pie{grid-area: pie;}
+.bors{grid-area: bors;}
+
+
+/* 000000000 CABECERA 000000000 */
+header{
+  display: grid;
+  grid-template-areas:
+  'esq1 logo logo logo logo esq2'
+  'esq1 menu menu menu menu esq2';
+  background-color: teal;
+  height: 10%;
+  }
+
+
+.menu{
+    width: 100%;
+  }
+
+.menu a{
+    float: left;
+    width: 25%;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(214, 226, 182);
+    background-color: rgb(70, 67, 60);
+    padding: 1% 0%;
+  }
+
+.menu a:hover{
+  background-color: rgb(19, 17, 11);
+}
+
+/* 000000000 CONTENIDO 000000000 */
+main{
+    background-color: blue;
+    height: 80%;
+}
+
+/* 000000000 PIE DE PÁGINA 000000000 */
+footer{
+  background-color: pink;
+  height: 10%;
+}
