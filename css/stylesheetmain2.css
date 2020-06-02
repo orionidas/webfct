@@ -2,21 +2,47 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap'); /*Títulos*/
 
+/* Scrollbar personalizada */
+::-webkit-Scrollbar{
+  width: 1vw;
+}
+::-webkit-Scrollbar-track{
+  background: rgba(0, 3, 6, 0.9);
+}
+::-webkit-Scrollbar-thumb{
+  background: rgb(22, 30, 37);
+  border-radius: 10px;
+}
+
+::-webkit-Scrollbar-thumb:hover{
+  background: rgb(220, 164, 0);
+  border-radius: 10px;
+
+}
+
 body{
   background: url('../images/background.jpg') repeat;
   margin: 0;
   color: rgb(231, 230, 190);
+
+}
+
+h1, h2, h3{
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 50px;
+}
+
+p{
+  font-size: 20px;
 }
 
 .contenedor{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  background-color: rgb(2, 14, 30, 0.90);
+  background-color: rgba(2, 14, 30, 0.90);
   }
 
-  p{
-    font-size: 25px;
-  }
+
 
 /* Encabezado */
 
@@ -45,7 +71,7 @@ header{
 
 header h1{
   margin: 0;
-  font-size: 5vw;
+  font-size: 80px;
   font-family: 'Berkshire Swash', cursive;
   padding: 0;
   color: rgb(251, 250, 217);
@@ -54,7 +80,6 @@ header h1{
 .menu{
   height: auto;
   width: 100%;
-  border-radius: 0px 0px 20px 20px ;
 }
 
 .menu a{
@@ -74,25 +99,26 @@ header h1{
   }
 
   #active{
-    background-color: rgb(220, 164, 0);
+    background-color: rgba(221, 164, 0, 0.9);
     color: rgb(23, 17, 4);
     border-bottom: 1vw rgb(203, 118, 19);
-
   }
+
+/* Cuerpo */
 
 main{
   padding: 2%;
   margin-top: 4%;
   grid-column: 2/6;
-  background-color: rgb(2, 14, 30, 0.98);
+  background-color: rgb(2, 14, 30, 0.80);
   border: 3vw solid transparent;
   border-image: url('../images/borde2.png') 49% round;
+  text-align: justify;
 }
 
 main h3{
   margin: 0;
   padding: 0;
-  font-size: 50px;
   font-family: 'Berkshire Swash', cursive;
   border-bottom: 2vw solid transparent;
   border-image: url('../images/borde2.png') 40% stretch;
@@ -106,21 +132,67 @@ main a {
   padding: 2%;
 }
 
-main p {
-  text-align: justify;
+
+main img{
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
 }
 
+main.producto{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+
+.item {
+  padding: 3%;
+  margin: 2%;
+  text-align: left;
+  border: 1vw solid transparent;
+  border-image: url('../images/borde.png') 49% stretch;
+}
+
+.producto h1{
+  grid-column: 1/4;
+  margin: 0;
+  }
+
+.producto h2{
+  margin-top: 5%;
+  grid-column: 1/4;
+  font-size: 40px;
+  border-bottom: 2vw solid transparent;
+  border-image: url('../images/borde2.png') 40% stretch;
+}
+
+.producto h3{
+  font-size: 30px;
+  border: none;
+}
+.producto p{
+  grid-column: 1/4;
+}
+
+
+
+
+/* Pie */
 
 footer{
   grid-column: 1/7;
   background-color: inherit;
-  padding: 1%;
-  margin-top: 2%;
+  padding: 0.5%;
+  margin-top: 5%;
 }
 
 footer p{
-  float: left;
+  float:left;
   color: rgb(86, 98, 117);
+  margin-left: 3%;
 }
 
 footer a {
@@ -129,5 +201,6 @@ footer a {
   color: rgb(240, 206, 87);
   float: right;
   background-color: rgb(2, 14, 30, 0.90);
-  padding: 1%;
+  margin: 1%;
+  margin-right: 3%;
 }
