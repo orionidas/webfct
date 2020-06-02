@@ -21,7 +21,7 @@
 }
 
 body{
-  background: url('../images/background.jpg') repeat;
+  background: url('images/background.jpg') repeat;
   margin: 0;
   color: rgb(231, 230, 190);
 
@@ -52,12 +52,12 @@ header{
   text-align: center;
   box-sizing: border-box;
   background-color: rgb(2, 14, 30, 0.90);
-  background: url("../images/top.jpg") no-repeat;
+  background: url("images/top.jpg") no-repeat;
   background-attachment: fixed;
   background-size: cover;
 
   border: 6vw solid transparent;
-  border-image: url('../images/borde.png') 49% stretch;
+  border-image: url('images/borde.png') 49% stretch;
 }
 
 .title{
@@ -66,7 +66,7 @@ header{
   font-size: 1.5vw;
   background-color: rgb(2, 14, 30, 0.80);
   border: 5vw solid transparent;
-  border-image: url('../images/borde.png') 49% stretch;
+  border-image: url('images/borde.png') 49% stretch;
 }
 
 header h1{
@@ -112,7 +112,7 @@ main{
   grid-column: 2/6;
   background-color: rgb(2, 14, 30, 0.80);
   border: 3vw solid transparent;
-  border-image: url('../images/borde2.png') 49% round;
+  border-image: url('images/borde2.png') 49% round;
   text-align: justify;
 }
 
@@ -121,7 +121,7 @@ main h3{
   padding: 0;
   font-family: 'Berkshire Swash', cursive;
   border-bottom: 2vw solid transparent;
-  border-image: url('../images/borde2.png') 40% stretch;
+  border-image: url('images/borde2.png') 40% stretch;
 }
 
 main a {
@@ -153,7 +153,7 @@ main.producto{
   margin: 2%;
   text-align: left;
   border: 1vw solid transparent;
-  border-image: url('../images/borde.png') 49% stretch;
+  border-image: url('images/borde.png') 49% stretch;
 }
 
 .producto h1{
@@ -166,7 +166,7 @@ main.producto{
   grid-column: 1/4;
   font-size: 40px;
   border-bottom: 2vw solid transparent;
-  border-image: url('../images/borde2.png') 40% stretch;
+  border-image: url('images/borde2.png') 40% stretch;
 }
 
 .producto h3{
