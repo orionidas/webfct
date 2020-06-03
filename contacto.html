@@ -24,9 +24,55 @@
   </div>
 
   <main class="contacto">
-    <form class="" action="#" method="post">
+    <h2>Formulario de contacto</h2>
+    <p>Por favor recuerde que; si nos está contactando como un cliente, solo distribuimos dentro de España.</p>
+        <form class="" action="#" method="post">
+        <div class="nom">
+          <label for="nom" >Nombre(s)*:</label>
+          <input type="text" id="nom" name="nom" value="" placeholder="Tu(s) nombre(s)..." required>
+        </div>
+        <div class="ape">
+          <label for="ape" >Apellido(s)*</label>
+          <input type="text" id="ape" name="ape" value="" placeholder="Tu(s) apellido(s)..." required>
+        </div>
+        <div class="email">
+          <label for="email" > E-mail* </label>
+          <input type="email" id="email" name="email" value="" placeholder="ejemplo@ejemplo.com" required>
+        </div>
+        <div class="tel">
+          <label for="tel"> Teléfono</label>
+          <input type="tel" id="tel" name="tel" value="" placeholder="+34 000 00 00 00">
+        </div>
+        <div class="sex">
+          <label for="sex">Género</label>
+          <select id="sex" name="sex">
+            <option value="" disabled selected>Selecciona uno...</option>
+            <option value="Mujer">Femenino</option>
+            <option value="Hombre">Masculino</option>
+            <option value="Otro">Otro</option>
+          </select>
+        </div>
+        <div class="motiv">
+          <label for="motiv" >Motivo de contacto*</label>
+          <select id="motiv" class="motiv" name="" required>
+            <option value="" disabled selected>Selecciona uno...</option>
+              <option value="pruebas">Solicitud de muestras</option>
+              <option value="carga">Pedido de abastecimiento</option>
+              <option value="cargaP">Pedido de abastecimiento periódico</option>
+              <option value="otro">Otro motivo</option>
+          </select>
+        </div>
 
-    </form>
+          <div class="raz">
+            <label for="raz">Mensaje</label>
+            <textarea id="raz" name="razContac" rows="8" cols="80" placeholder="Escribe aquí tu mensaje: en caso de solicitud de mercancía de algún tipo, incluya su dirección de envío y código postal, además de incluir los códigod de referencia de los productos solicitados." required></textarea>
+          </div>
+          <div class="bottom">
+            <input type="reset" name="reset" value="Resetear">
+            <input type="submit" name="submit" value="Enviar">
+          </div>
+
+      </form>
   </main>
 
 
