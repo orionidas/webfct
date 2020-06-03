@@ -235,6 +235,7 @@ form{
   grid-template-columns: repeat(4, 1fr);
   width: 100%;
   box-sizing: border-box;
+  margin-top: 5%; 
 }
 input, select{
   width: 97%;
