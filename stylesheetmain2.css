@@ -235,12 +235,49 @@ form{
   grid-template-columns: repeat(4, 1fr);
   width: 100%;
   box-sizing: border-box;
-  margin-top: 5%; 
+  margin-top: 5%;
 }
-input, select{
-  width: 97%;
+input, select {
+  width: 95%;
   height: 25px;
+  box-sizing: content-box;
+  background: rgba(36, 50, 61, 0);
+  border:  0.5vw solid transparent;
+  border-image: url('images/borde2.png') 40% stretch;
+  color: inherit;
 }
+
+
+textarea{
+  resize: vertical;
+  box-sizing: content-box;
+  background: rgba(36, 50, 61, 0);
+  border:  0.5vw solid transparent;
+  border-image: url('images/borde2.png') 40% stretch;
+  color: inherit;
+  width: 100%;
+}
+
+
+input:hover, select:hover, textarea:hover{
+  background: rgba(36, 50, 61, 0.5);
+  color: rgb(223, 168, 48);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+input:-webkit-autofill {
+    -webkit-text-fill-color: rgb(231, 230, 190) !important;
+}
+option{
+  background: rgba(36, 50, 61, 1);
+  color: inherit;
+}
+
 
 label{
   font-size: 25px;
@@ -259,15 +296,15 @@ label{
 .raz, .bottom{
   grid-column: 1/5;
 }
-textarea{
-  width: 100%;
-}
-
 
 input[type=reset], input[type=submit]{
   float: right;
   width: 15%;
   margin: 2%;
+  font-size: 20px;
+  border: 1vw solid transparent;
+  border-image: url('images/borde2.png') 49% stretch;
+
 }
 /* Pie */
 
